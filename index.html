@@ -8,11 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
 	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 </head>
 
 <body class="">
@@ -21,6 +22,9 @@
 		<h1 class="teal-text text-darken-1 center">Dream Nara!</h1>
 	</div>
 
+	<div class="parallax-container">
+		<div class="parallax"><img src="images/test1.jpg"></div>
+	</div>
 	
 	<div class="carousel carousel-slider center" data-indicators="true">
 		<div class="carousel-item red accent-2 white-text" href="#one!">
@@ -61,15 +65,15 @@
 	</div>
 
 	<footer class="page-footer">
-			<div class="container">
+			<div class="container footer-container">
 				&copy; 2016 Copyright
 				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 			</div>
 	</footer>
 
 
-	<div class="fixed-action-btn">
-		<a class="btn-floating btn-large red">
+	<div class="fixed-action-btn go-top">
+		<a class="btn-floating btn-tiny red">
 			<i class="small material-icons">navigation</i>
 		</a>
 	</div>
@@ -79,8 +83,14 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script>
 $('.carousel.carousel-slider').carousel({full_width: true});
+
+$(document).ready(function(){ 
+	$('.parallax').parallax();
+});
+
 </script>
 </body>
 </html>
