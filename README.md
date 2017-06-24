@@ -1,2 +1,4 @@
 # DreamNara
-Dream &amp; Nara
+Dream &amp; Nara's mobile wedding invitation
+
+Site: https://hwangnara.github.io/DreamNara/
