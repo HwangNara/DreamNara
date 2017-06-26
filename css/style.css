@@ -2,8 +2,9 @@
 
 html {
     font-family: 'Nanum Barun Gothic', sans-serif;
-    background-color: rgba(255, 198, 180, 0.32);
 }
 .footer-container { padding-bottom: 16px; }
-.parallax-container { height: 300px; }
-.parallax-container img { opacity: 0.5; }
+.parallax-container { height: 500px; }
+.parallax-container img { width: 360px; }
+
+.header-title { background-color : rgba(255, 198, 180, 0.75); }
