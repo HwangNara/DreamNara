@@ -5,6 +5,12 @@ html {
 }
 .footer-container { padding-bottom: 16px; }
 .parallax-container { height: 500px; }
-.parallax-container img { width: 360px; }
+.parallax-container img {
+    width: 360px;  filter:
+    grayscale(100%);
+}
 
-.header-title { background-color : rgba(255, 198, 180, 0.75); }
+.header-title {
+    background-color : rgba(255, 198, 180, 0.8);
+    box-shadow: 0px 0px 6px #ffffff;
+}
