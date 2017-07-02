@@ -8,7 +8,15 @@ $(function(){
 			$('.go-top').fadeOut();
 		}
 	});
-	
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 40) {
+            $('.nav-tab').fadeIn();
+        } else {
+            $('.nav-tab').fadeOut();
+        }
+    });
+
 	//Click event to scroll to top
 	$('.go-top').click(function(){
 		$('html, body').animate({scrollTop : 0}, 600);
