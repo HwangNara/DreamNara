@@ -1,4 +1,4 @@
-@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+/*@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);*/
 
 html {
     font-family: 'Nanum Barun Gothic', sans-serif;
@@ -6,13 +6,13 @@ html {
 .footer-container { padding-bottom: 16px; }
 .parallax-container { height: 500px; }
 .parallax-container img {
-    width: 360px;  filter:
-    grayscale(100%);
+    width: 800px;
+    filter: grayscale(100%);
 }
 
 .header-title {
     background-color : rgba(255, 198, 180, 0.8);
-    /*box-shadow: 0px 0px 6px #ffffff;*/
+    box-shadow: 0px 0px 4px #ffffff;
 }
 
 .tab-section { padding-top: 40px; }
@@ -27,11 +27,13 @@ html {
 .nav-tab {
     margin: 0;
     font-size: 12px;
-    opacity: 0.7;
+    opacity: 0.8;
+    display: none;
 }
 .nav-tab .col { padding: 0;}
 .nav-tab .tabs { height: 40px;}
-.nav-tab .tabs > li {
+.nav-tab .tabs > li > a {
     line-height: 40px;
     height: 40px;
+    color: #ff000a;
 }
