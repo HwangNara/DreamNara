@@ -3,11 +3,19 @@
 html {
     font-family: 'Nanum Barun Gothic', sans-serif;
 }
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+footer.page-footer {
+    background-color: rgb(255, 239, 240);
+}
 .footer-container { padding-bottom: 16px; }
 .parallax-container { height: 500px; }
 .parallax-container img {
-    width: 800px;
-    filter: grayscale(100%);
+    /*width: 800px;*/
+    /*filter: grayscale(100%);*/
 }
 
 .header-title {
