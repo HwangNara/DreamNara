@@ -16,11 +16,11 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 </head>
-<!------------------------------------                  body                    ------------------------------------------------------------------->
 
+<!----------------------------------------------------   body   ------------------------------------------------------------>
 <body>
-
-<div id="test1" class="">
+<!-- 1. -->
+<div id="test1">
     <div class="row nav-tab fixed">
         <div class="col s12">
             <ul class="tabs">
@@ -48,9 +48,7 @@
     </div>
 </div>
 
-
-
-
+<!-- 2. -->
 <div id="test2" class="card-panel tab-section">
     <br/><br/><br/>
     <h4 class="center-align">초대합니다</h4>
@@ -71,8 +69,7 @@
 </div>
 
 
-
-<!-- Gallery-->
+<!-- 3. -->
 <div id="test3" class="tab-section">
     <div>
         <h5 class="center-align">우리들 모습</h5>
@@ -80,21 +77,21 @@
     <div class="slider">
         <ul class="slides">
             <li>
-                <img src="./images/carousel/test1.jpeg"/> <!-- random image -->
+                <img src="./images/carousel/test1.jpeg"/>
                 <div class="caption center-align">
                     <h3 class="red-text text-darken-2">This is our big Tagline!</h3>
                     <h5 class="blue-text text-darken-2">Here's our small slogan.</h5>
                 </div>
             </li>
             <li>
-                <img src="./images/carousel/test2.jpeg"/> <!-- random image -->
+                <img src="./images/carousel/test2.jpeg"/>
                 <div class="caption left-align">
                     <h3 class="light grey-text text-lighten-3">Left Aligned Caption</h3>
                     <h5>Here's our small slogan.</h5>
                 </div>
             </li>
             <li>
-                <img src="./images/carousel/test3.jpeg"/> <!-- random image -->
+                <img src="./images/carousel/test3.jpeg"/>
                 <div class="caption right-align">
                     <h3>Right Aligned Caption</h3>
                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -111,6 +108,7 @@
     </div>
 </div>
 
+<!-- 4. -->
 <div id="test4" class="tab-section">
     <blockquote>
         <table>
@@ -161,6 +159,11 @@
         $('.parallax').parallax();
 
         map.showLocation();
+
+        $(".map-text-div").parent().css({
+            'width':  '100%',
+            'text-align': 'center'
+        });
     });
 
     var map = {};
@@ -171,6 +174,8 @@
                 level: 3 // 지도의 확대 레벨
             };
         var map = new daum.maps.Map(mapContainer, mapOption);
+
+        map.setZoomable(false);
 
         // 마커가 표시될 위치입니다
         var markerPosition  = new daum.maps.LatLng(37.55744494643207, 126.93140262289675);
@@ -184,7 +189,9 @@
         marker.setMap(map);
 
         var iwContent =
-                '<div style="padding:5px;">신촌장로교회 <br><a href="http://map.daum.net/link/to/9188779" style="color:blue" target="_blank">길찾기</a></div>',
+                '<div class="map-text-div" style="padding:5px;">신촌장로교회 <br>' +
+                '   <strong><a href="http://map.daum.net/link/to/9188779" target="_blank">길찾기</a></strong>' +
+                '</div>',
             // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
             iwPosition = new daum.maps.LatLng(37.55744494643207, 126.93140262289675); //인포윈도우 표시 위치입니다
 
@@ -194,6 +201,7 @@
             content : iwContent
         });
         infowindow.open(map, marker);
+
     };
 
     // Google Analytics
@@ -207,6 +215,5 @@
 
 </script>
 </body>
-
 </html>
         

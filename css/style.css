@@ -46,3 +46,6 @@ footer.page-footer {
     height: 40px;
     color: #ff000a;
 }
+
+.map-text-div a { color : #ff5d0a; }
+.map-text-div a:active { color : rgba(255, 181, 0, 0.97); }
