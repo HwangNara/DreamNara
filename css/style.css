@@ -19,6 +19,7 @@ footer.page-footer {
 }
 
 .header-title {
+    padding: 4px;
     background-color : rgba(255, 198, 180, 0.8);
     box-shadow: 0px 0px 4px #ffffff;
 }
@@ -54,3 +55,6 @@ footer.page-footer {
     .slider { height: 640px !important; }
     .slider ul:first-child { height: 600px !important; }
 }
+
+.font-16 { font-size: 16px; }
+.font-small { color: #fd808a; }
