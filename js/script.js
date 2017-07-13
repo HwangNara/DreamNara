@@ -47,14 +47,12 @@ function indicatorScrollSpy() {
     page.moveIndicator(order);
 }
 
-
 page.move = function(tag) {
     window.location.href = tag;
 }
 
 page.moveIndicator = function (order) {
     var category = ["WELCOME", "GREETING", "GALLERY", "DIRECTIONS"];
-    console.log("current tab : " + category[order]);
     var browserWidth = $(window).width();
     var onePieceWidth = browserWidth / page.sectionNumber;
     var scrollSpyLeft = page.getScrollSpyLeftValue(onePieceWidth, order);
