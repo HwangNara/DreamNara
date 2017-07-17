@@ -58,3 +58,17 @@ footer.page-footer {
 
 .font-16 { font-size: 16px; }
 .font-small { color: #fd808a; }
+
+.font-bold { font-weight: bold; }
+
+.hr-bus {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f3b6ba;
+    padding: 0;
+}
+
+.tab-title {
+    margin: 2rem 0 2rem 0;
+}
