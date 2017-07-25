@@ -35,11 +35,11 @@ function navTabFadeEffect(number) {
 function indicatorScrollSpy() {
     var order = 0;
     var currentTop = $(document).scrollTop();
-    if ($('#test2').offset().top > currentTop) {
+    if ($('#menu-greeting').offset().top > currentTop) {
         order = 0;
-    } else if ($('#test3').offset().top > currentTop) {
+    } else if ($('#menu-gallery').offset().top > currentTop) {
         order = 1;
-    } else if ($('#test4').offset().top > currentTop) {
+    } else if ($('#menu-directions').offset().top > currentTop) {
         order = 2;
     } else {
         order = 3;
