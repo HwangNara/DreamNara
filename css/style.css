@@ -1,32 +1,23 @@
 /*@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);*/
 
-html {
-    font-family: 'Nanum Barun Gothic', sans-serif;
-}
-body {
-    max-width: 1024px;
-    margin: 0 auto;
-}
+/*html { font-family: 'Nanum Barun Gothic', sans-serif; }*/
+body { max-width: 1024px; margin: 0 auto; }
 
 footer.page-footer {
     background-color: rgb(255, 239, 240);
 }
+
 .footer-container { padding-bottom: 16px; }
 .parallax-container { height: 500px; }
-.parallax-container img {
-    /*width: 800px;*/
-    /*filter: grayscale(100%);*/
-}
 
 .header-title {
     padding: 4px;
-    background-color : rgba(255, 198, 180, 0.8);
-    box-shadow: 0px 0px 4px #ffffff;
+    background-color : rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .tab-section { padding-top: 40px; }
 .go-top { display: none; }
-
 .fixed {
     position: fixed;
     top: 0;
@@ -48,17 +39,13 @@ footer.page-footer {
     color: #ff000a;
 }
 
+#map { margin: 0; }
 .map-text-div a { color : #ff5d0a; }
-.map-text-div a:active { color : rgba(255, 181, 0, 0.97); }
-
-@media (min-width:768px){
-    .slider { height: 640px !important; }
-    .slider ul:first-child { height: 600px !important; }
-}
+.map-text-div a:hover { font-weight: bold; }
+.map-text-div a:active { color : rgba(253, 66, 7, 0.97); }
 
 .font-16 { font-size: 16px; }
 .font-small { color: #fd808a; }
-
 .font-bold { font-weight: bold; }
 
 .hr-bus {
@@ -68,7 +55,10 @@ footer.page-footer {
     border-top: 1px solid #f3b6ba;
     padding: 0;
 }
+.transport-element { word-spacing: 0.3rem; }
+.tab-title { margin: 2rem 0 2rem 0; }
 
-.tab-title {
-    margin: 2rem 0 2rem 0;
+@media (min-width:768px){
+    .slider { height: 640px !important; }
+    .slider ul:first-child { height: 600px !important; }
 }
