@@ -193,8 +193,7 @@
     </a>
 </div>
 
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=1bd0a873359cb4c84d0ed3f0a029af7d&libraries=services,clusterer,drawing"></script>
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=1bd0a873359cb4c84d0ed3f0a029af7d"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afa26e48e122bb44201b5fbeb7d8dbcf&libraries=services,clusterer,drawing"></script>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -224,6 +223,7 @@
         var map = new daum.maps.Map(mapContainer, mapOption);
 
         map.setZoomable(false);
+        map.setDraggable(false);
 
         // 마커가 표시될 위치입니다
         var markerPosition  = new daum.maps.LatLng(37.55744494643207, 126.93140262289675);
