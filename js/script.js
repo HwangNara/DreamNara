@@ -2,7 +2,6 @@ var page = {};
 page.sectionNumber = 4;
 
 $(function() {
-
     //Check to see if the window is top if not then display button
 	$(window).scroll(function() {
 	    goTopFadeEffect(50);
