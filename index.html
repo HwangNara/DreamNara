@@ -15,11 +15,17 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+</head>
 </head>
 
 <!----------------------------------------------------   body   ------------------------------------------------------------>
 <body>
-<!-- 1. -->
+<!----------------------------------------------------------->
+<!-- 1. WELCOME -->
+<!----------------------------------------------------------->
 <div id="menu-welcome">
     <div class="row nav-tab fixed">
         <div class="col s12">
@@ -48,7 +54,9 @@
     </div>
 </div>
 
-<!-- 2. -->
+<!----------------------------------------------------------->
+<!-- 2. GREETING -->
+<!----------------------------------------------------------->
 <div id="menu-greeting" class="card-panel tab-section card-panel-custom">
     <h4 class="center-align tab-title">초대합니다</h4>
     <br/>
@@ -67,56 +75,25 @@
     <p class="center-align"><span class="font-16">김석수 정상해</span><span class="font-small">의 차녀</span> <span class="font-16">드림</span></p>
 </div>
 
-
-
-<!-- 3. -->
+<!----------------------------------------------------------->
+<!-- 3. GALLERY -->
+<!----------------------------------------------------------->
 <div id="menu-gallery" class="tab-section">
     <div>
         <h4 class="center-align tab-title">우리들 모습</h4>
     </div>
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="./images/carousel/grasp-hand.jpg"/>
-              <!--  <div class="caption right-align">
-                    <h3>Right Aligned Caption</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>-->
-            </li>
-            <li>
-                <img src="./images/carousel/gray-seat.jpg"/>
-                <!--<div class="caption center-align">
-                    <h3 class="red-text text-darken-2">This is our big Tagline!</h3>
-                    <h5 class="blue-text text-darken-2">Here's our small slogan.</h5>
-                </div>-->
-            </li>
-            <li>
-                <img src="./images/carousel/in-front-of-flowers.jpg"/>
-                <!--<div class="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>-->
-            </li>
-            <li>
-                <img src="./images/carousel/gray-stand.jpg"/>
-                <!--<div class="caption left-align">
-                    <h3 class="light grey-text text-lighten-3">Left Aligned Caption</h3>
-                    <h5>Here's our small slogan.</h5>
-                </div>-->
-            </li>
-            <li>
-                <img src="./images/carousel/in-front-of-pond.jpg"/>
-                <!--<div class="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>-->
-            </li>
-        </ul>
+    <div class="gallery-slider">
+        <div id="gallery-image1"></div>
+        <div id="gallery-image2"></div>
+        <div id="gallery-image3"></div>
+        <div id="gallery-image4"></div>
+        <div id="gallery-image5"></div>
     </div>
 </div>
 
-
-<!-- 4. -->
+<!----------------------------------------------------------->
+<!-- 4. DIRECTIONS -->
+<!----------------------------------------------------------->
 <div id="menu-directions" class="tab-section">
     <div>
         <h4 class="center-align tab-title">오시는 길</h4>
@@ -180,7 +157,6 @@
         </li>
     </ul>
 
-
     <!-- Footer -->
     <footer class="page-footer">
         <div class="container footer-container">
@@ -189,7 +165,9 @@
     </footer>
 </div>
 
+<!----------------------------------------------------------->
 <!-- Top Button -->
+<!----------------------------------------------------------->
 <div class="fixed-action-btn go-top">
     <a class="btn-floating btn-tiny red waves-effect waves-light">
         <i class="small material-icons">arrow_upward</i>
@@ -199,16 +177,23 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afa26e48e122bb44201b5fbeb7d8dbcf&libraries=services,clusterer,drawing"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/daumMap.js"></script>
 <script>
     $(document).ready(function(){
-        $('.slider').slider();
         $('.parallax').parallax();
         map.showLocation();
         $(".map-text-div").parent().css({
             'width':  '100%',
             'text-align': 'center'
+        });
+        $('.gallery-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            arrows: false,
         });
     });
 

@@ -67,7 +67,18 @@ footer.page-footer {
 .card-panel-custom { margin-top: 0; }
 ul.collection-custom { margin-top: 0; border: none; }
 
+.gallery-slider div {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-slider #gallery-image1 { background-image: url("../images/carousel/grasp-hand.jpg"); }
+.gallery-slider #gallery-image2 { background-image: url("../images/carousel/gray-seat.jpg"); }
+.gallery-slider #gallery-image3 { background-image: url("../images/carousel/in-front-of-flowers.jpg"); }
+.gallery-slider #gallery-image4 { background-image: url("../images/carousel/gray-stand.jpg"); }
+.gallery-slider #gallery-image5 { background-image: url("../images/carousel/in-front-of-pond.jpg"); }
+
 @media (min-width:768px){
-    .slider { height: 640px !important; }
-    .slider ul:first-child { height: 600px !important; }
+    .gallery-slider div { height: 640px !important; }
 }
