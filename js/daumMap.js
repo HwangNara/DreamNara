@@ -5,8 +5,8 @@ var newMap = {
         level: 5 // 지도의 확대 레벨
     },
     infoWindowContent :
-        '<div class="map-text-div" style="padding:5px;">신촌장로교회 <br>' +
-            '   <strong><a href="http://map.daum.net/link/to/9188779" target="_blank">길찾기</a></strong>' +
+        '<div class="map-text-div" style="padding:5px;">신촌장로교회<br>' +
+            '<strong><a href="http://map.daum.net/link/to/9188779" target="_blank">길찾기</a></strong>' +
         '</div>',
     showLocation : function () {
         var map = new daum.maps.Map(this.mapContainer, this.mapOption);
