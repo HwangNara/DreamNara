@@ -9,9 +9,9 @@ footer.page-footer {
 .footer-container { padding-bottom: 16px; }
 
 #menu-welcome {}
-#menu-greeting {}
-#menu-gallery { box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 3rem; }
-#menu-directions {}
+#menu-greeting { }
+#menu-gallery { margin: 0.5rem 0 1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 3rem; }
+#menu-directions { margin: 0.5rem 0 0.1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 0;}
 
 .parallax-container { height: 500px; }
 
@@ -46,6 +46,7 @@ footer.page-footer {
 }
 
 #map { margin: 0; }
+.map-text-div { font-weight: bold; }
 .map-text-div a { color : #ff5d0a; }
 .map-text-div a:hover { font-weight: bold; }
 .map-text-div a:active { color : rgba(253, 66, 7, 0.97); }
@@ -61,6 +62,8 @@ footer.page-footer {
     border-top: 1px solid #f3b6ba;
     padding: 0;
 }
+
+.transport-li { min-height: 70px !important; }
 .transport-element { word-spacing: 0.3rem; }
 .tab-title { margin: 2rem 0 2rem 0; font-weight: 600; }
 
