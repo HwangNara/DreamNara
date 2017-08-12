@@ -78,9 +78,12 @@ ul.collection-custom { margin-top: 0; border: none; }
 }
 .gallery-slider #gallery-image1 { background-image: url("../images/carousel/grasp-hand.jpg"); }
 .gallery-slider #gallery-image2 { background-image: url("../images/carousel/gray-seat.jpg"); }
-.gallery-slider #gallery-image3 { background-image: url("../images/carousel/in-front-of-flowers.jpg"); }
+.gallery-slider #gallery-image3 { background-image: url("../images/carousel/fold-arms.png"); }
 .gallery-slider #gallery-image4 { background-image: url("../images/carousel/gray-stand.jpg"); }
-.gallery-slider #gallery-image5 { background-image: url("../images/carousel/in-front-of-pond.jpg"); }
+.gallery-slider #gallery-image5 { background-image: url("../images/carousel/greeting-skirt.png"); }
+.gallery-slider #gallery-image6 { background-image: url("../images/carousel/hug.png"); }
+.gallery-slider #gallery-image7 { background-image: url("../images/carousel/see-each-other.png"); }
+.gallery-slider #gallery-image8 { background-image: url("../images/carousel/standing-upright.png"); }
 
 @media (min-width:768px){
     .gallery-slider div { height: 640px !important; }
