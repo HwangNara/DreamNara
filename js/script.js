@@ -27,9 +27,9 @@ function goTopFadeEffect(number) {
 function navTabFadeEffect(number) {
     if ($(this).scrollTop() > 40) {
         $('.nav-tab').fadeIn();
-    } /*else {
+    } else {
      $('.nav-tab').fadeOut();
-     }*/
+     }
 }
 function indicatorScrollSpy() {
     var order = 0;
