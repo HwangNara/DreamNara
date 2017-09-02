@@ -70,7 +70,7 @@ footer.page-footer {
 
 .transport-li { min-height: 70px !important; }
 .transport-element { word-spacing: 0.3rem; }
-.tab-title { margin: 2rem 0 2rem 0; font-weight: 600; }
+.tab-title { margin: 2rem 2rem 2rem 0; font-weight: 600; }
 
 .card-panel-custom { margin-top: 0; }
 ul.collection-custom { margin-top: 0; border: none; }
