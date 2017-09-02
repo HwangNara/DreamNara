@@ -4,8 +4,8 @@ page.sectionNumber = 4;
 $(function() {
     //Check to see if the window is top if not then display button
 	$(window).scroll(function() {
-	    goTopFadeEffect(50);
-        navTabFadeEffect(50);
+	    offsetFadeEffect(50, '.go-top');
+	    offsetFadeEffect(50, '.nav-tab');
         indicatorScrollSpy();
 	});
 
@@ -17,33 +17,32 @@ $(function() {
 });
 
 
-function goTopFadeEffect(number) {
-    if ($(this).scrollTop() > 50) {
-        $('.go-top').fadeIn();
+function offsetFadeEffect(number, selector) {
+    if ($(this).scrollTop() > number) {
+        $(selector).fadeIn();
     } else {
-        $('.go-top').fadeOut();
+        $(selector).fadeOut();
     }
 }
-function navTabFadeEffect(number) {
-    if ($(this).scrollTop() > 40) {
-        $('.nav-tab').fadeIn();
-    } else {
-     $('.nav-tab').fadeOut();
-     }
-}
+
 function indicatorScrollSpy() {
     var order = 0;
     var currentTop = $(document).scrollTop();
-    if ($('#menu-greeting').offset().top > currentTop) {
+
+    if (topOffset('#menu-greeting') > currentTop) {
         order = 0;
-    } else if ($('#menu-gallery').offset().top > currentTop) {
+    } else if (topOffset('#menu-gallery') > currentTop) {
         order = 1;
-    } else if ($('#menu-directions').offset().top > currentTop) {
+    } else if (topOffset('#menu-location') > currentTop) {
         order = 2;
     } else {
         order = 3;
     }
     page.moveIndicator(order);
+
+    function topOffset(selector) {
+        return $(selector).offset().top;
+    }
 }
 
 page.move = function(tag) {
@@ -51,7 +50,6 @@ page.move = function(tag) {
 }
 
 page.moveIndicator = function (order) {
-    var category = ["WELCOME", "GREETING", "GALLERY", "DIRECTIONS"];
     var browserWidth = $(window).width();
     var onePieceWidth = browserWidth / page.sectionNumber;
     var scrollSpyLeft = page.getScrollSpyLeftValue(onePieceWidth, order);

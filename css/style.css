@@ -14,7 +14,7 @@ footer.page-footer {
 #menu-welcome {}
 #menu-greeting { }
 #menu-gallery { margin: 0.5rem 0 1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 3rem; }
-#menu-directions { margin: 0.5rem 0 0.1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 0;}
+#menu-location { margin: 0.5rem 0 0.1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 0;}
 
 .parallax-container { height: 500px; }
 
