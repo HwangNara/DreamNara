@@ -1,4 +1,4 @@
-# DreamNaram
+# DreamNara
 
 ## Introduce
 Kim Dream &amp; Hwang Nara's mobile wedding invitation
