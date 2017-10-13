@@ -1,0 +1,100 @@
+@import url('//fonts.googleapis.com/css?family=Noto+Sans');
+@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+@import url('//fonts.googleapis.com/css?family=Libre+Baskerville');
+
+
+html { font-family: 'Nanum Myeongjo', 'Noto Sans', sans-serif; }
+body { max-width: 1024px; margin: 0 auto; }
+
+footer.page-footer {
+    background-color: rgb(255, 239, 240);
+}
+.footer-container { padding-bottom: 16px; }
+
+#menu-welcome {}
+#menu-greeting { }
+#menu-gallery { margin: 0.5rem 0 1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 3rem; }
+#menu-location { margin: 0.5rem 0 0.1rem 0; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16); padding-bottom: 0;}
+
+.parallax-container { height: 500px; }
+
+.header-title {
+    margin-top: 35px;
+    padding-left: 6px;
+    color: white;
+}
+.header-title h5 { font-weight: 600; }
+.header-title h6 { font-weight: 600; }
+
+.tab-section { padding-top: 3rem; }
+.go-top { display: none; }
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-tab {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+    display: none;
+    font-family: 'Libre Baskerville';
+}
+.nav-tab .col { padding: 0;}
+.nav-tab .tabs { height: 40px;}
+.nav-tab .tabs > li > a {
+    line-height: 40px;
+    height: 40px;
+    color: #ff000a;
+}
+
+#map { margin: 0; }
+.map-text-div { font-weight: bold; }
+.map-text-div a { color : #ff5d0a; }
+.map-text-div a:hover { font-weight: bold; }
+.map-text-div a:active { color : rgba(253, 66, 7, 0.97); }
+
+.font-16 { font-size: 16px; }
+.font-small { color: #fd808a; }
+.font-bold { font-weight: bold; }
+
+.hr-bus {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f3b6ba;
+    padding: 0;
+}
+
+.transport-li { min-height: 70px !important; }
+.transport-element { word-spacing: 0.3rem; }
+.tab-title { margin: 2rem 2rem 2rem 0; font-weight: 600; }
+
+.card-panel-custom { margin-top: 0; }
+ul.collection-custom { margin-top: 0; border: none; }
+
+.gallery-slider div {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.gallery-slider #gallery-image1 { background-image: url("../images/carousel/gray-seat.jpg"); }
+.gallery-slider #gallery-image2 { background-image: url("../images/carousel/gray-stand.jpg"); }
+.gallery-slider #gallery-image3 { background-image: url("../images/carousel/standing-upright.png"); }
+.gallery-slider #gallery-image4 { background-image: url("../images/carousel/see-each-other.png"); }
+.gallery-slider #gallery-image5 { background-image: url("../images/carousel/hug.png"); }
+.gallery-slider #gallery-image6 { background-image: url("../images/carousel/greeting-skirt.png"); }
+.gallery-slider #gallery-image7 { background-image: url("../images/carousel/grasp-hand.jpg"); }
+
+@media (min-width:768px){
+    .gallery-slider div { height: 640px !important; }
+    #main-parallax-img { transform: translate3d(-50%, 440px, 0px) !important; }
+}
+
+/*
+margin-top: 39px;
+padding-right: 26px;
+*/

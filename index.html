@@ -1,9 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-	<title>Dream & Nara</title>
+    <meta charset="UTF-8">
+    <title>황나라 ♥ 김드림</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!--Import Google Icon Font-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 </head>
+</head>
+<!----------------------------------------------------   body   ------------------------------------------------------------>
 <body>
-Hello Wordl!
+<!----------------------------------------------------------->
+<!-- 1. WELCOME -->
+<!----------------------------------------------------------->
+<div id="menu-welcome">
+    <div class="row nav-tab fixed">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="javascript:void(0);" onclick="page.move('#menu-welcome')">welcome</a></li>
+                <li class="tab col s3"><a href="javascript:void(0);" onclick="page.move('#menu-greeting')">greeting</a></li>
+                <li class="tab col s3"><a href="javascript:void(0);" onclick="page.move('#menu-gallery')">gallery</a></li>
+                <li class="tab col s3"><a href="javascript:void(0);" onclick="page.move('#menu-location')">location</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br /><br /><br />
+                <div class="row center header-title">
+                    <h5 class="header col s12 light left-align">황나라 & 김드림</h5>
+                    <h6 class="left-align">2017. 10. 28(토) 오후12시</h6>
+                    <h6 class="left-align">신촌장로교회</h6>
+                </div>
+            </div>
+        </div>
+        <div class="parallax">
+            <img id="main-parallax-img" src="images/new-main.png">
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------->
+<!-- 2. GREETING -->
+<!----------------------------------------------------------->
+<div id="menu-greeting" class="tab-section">
+    <h4 class="right tab-title">greeting</h4>
+    <div class="card-panel card-panel-custom">
+        <br/>
+        <div class="center-align">
+            <img src="images/intro-wedding.png" alt="intro" class="responsive-img">
+        </div>
+
+        <br/>
+        <p class="center-align">하나님의 은혜로 한동대학교에서 만나</p>
+        <p class="center-align">이제, 믿음의 가정을 이루려고 합니다.</p>
+        <br />
+
+        <p class="center-align">예수님을 가정의 주인으로 모시고</p>
+        <p class="center-align">사랑 겸손 봉사의 정신을 바탕으로</p>
+        <p class="center-align">배워서 남주는 나라와 드림이 되겠습니다.</p>
+        <p class="center-align">저희의 새로운 시작을 축복해 주세요.</p>
+        <br />
+
+        <p class="center-align"><span class="font-16">황국환 김경신</span><span class="font-small">의 장남</span> <span class="font-16">나라</span></p>
+        <p class="center-align"><span class="font-16">김석수 정상해</span><span class="font-small">의 차녀</span> <span class="font-16">드림</span></p>
+    </div>
+</div>
+
+<!----------------------------------------------------------->
+<!-- 3. GALLERY -->
+<!----------------------------------------------------------->
+<div id="menu-gallery" class="tab-section">
+    <div>
+        <h4 class="right-align tab-title">gallery</h4>
+    </div>
+    <div class="gallery-slider">
+        <div id="gallery-image1"></div>
+        <div id="gallery-image2"></div>
+        <div id="gallery-image3"></div>
+        <div id="gallery-image4"></div>
+        <div id="gallery-image5"></div>
+        <div id="gallery-image6"></div>
+        <div id="gallery-image7"></div>
+    </div>
+</div>
+
+<!----------------------------------------------------------->
+<!-- 4. LOCATION -->
+<!----------------------------------------------------------->
+<div id="menu-location" class="tab-section">
+    <div>
+        <h4 class="right-align tab-title">location</h4>
+    </div>
+
+    <!-- Short Direction -->
+    <blockquote>
+        <table>
+            <thead>
+            <tr>
+                <th>일시</th>
+                <th>장소</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2017. 10. 28(토) 오후 12시</td>
+                <td>신촌장로교회</td>
+            </tr>
+            </tbody>
+        </table>
+    </blockquote>
+
+    <!-- Map -->
+    <div id="map" style="height:400px;" class="row"></div>
+
+    <!--Transportation-->
+    <ul class="collection collection-custom">
+        <li class="collection-item avatar transport-li">
+            <i class="material-icons circle green">train</i>
+            <span class="title font-bold">지하철 2호선</span>
+            <p class="transport-element">신촌역 홍대입구역</p>
+        </li>
+        <li class="collection-item avatar transport-li">
+            <i class="material-icons circle blue accent-2">directions_bus</i>
+            <span class="title font-bold">파랑(간선)</span>
+            <p class="transport-element">153 270 271 273 602 603 604 707 721 740 753 110A고려대 110B국민대</p>
+        </li>
+        <li class="collection-item avatar transport-li">
+            <i class="material-icons circle green accent-4">directions_bus</i>
+            <span class="title font-bold">초록(지선)</span>
+            <p class="transport-element">5714 6712 6716 7011 7016 7611 7613 7713 7720 7727 7728 7737</p>
+        </li>
+        <li class="collection-item avatar transport-li">
+            <i class="material-icons circle red">directions_bus</i>
+            <span class="title font-bold">빨강(광역)</span>
+            <p class="transport-element">1000 1100 1101 1200 1300 1301 1302 1400 1500 1501 1601 M6117 M6628 M6724 M7731</p>
+        </li>
+        <li class="collection-item avatar transport-li">
+            <i class="material-icons circle grey">directions_bus</i>
+            <span class="title font-bold">기타</span>
+            <p class="transport-element"><span class="font-bold">마을</span> 마포08 마포09 마포13 마포14</p>
+            <hr class="hr-bus"/>
+            <p class="transport-element"><span class="font-bold">직행</span> 1004 2000 3000 3000A G6000</p>
+            <hr class="hr-bus"/>
+            <p class="transport-element">
+                <span class="font-bold">공항</span> 6002
+                <span class="font-bold">일반</span> 72
+                <span class="font-bold">좌석</span> 800 921
+            </p>
+        </li>
+    </ul>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <span class="grey-text text-darken-3">Copyright &copy; Hwang Nara &amp; Kim Dream</span>
+        </div>
+    </footer>
+</div>
+
+<!----------------------------------------------------------->
+<!-- Top Button -->
+<!----------------------------------------------------------->
+<div class="fixed-action-btn go-top">
+    <a class="btn-floating btn-tiny red waves-effect waves-light">
+        <i class="small material-icons">arrow_upward</i>
+    </a>
+</div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afa26e48e122bb44201b5fbeb7d8dbcf&libraries=services,clusterer,drawing"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/daumMap.js"></script>
+<script>
+    $(document).ready(function(){
+        newMap.showLocation();
+        $('.parallax').parallax();
+        $(".map-text-div").parent().css({
+            'width':  '100%',
+            'text-align': 'center'
+        });
+        $('.gallery-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            arrows: false,
+        });
+    });
+
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-102181315-1', 'auto');
+    ga('send', 'pageview');
+</script>
 </body>
 </html>
